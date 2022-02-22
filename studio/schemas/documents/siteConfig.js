@@ -87,6 +87,11 @@ export default {
       ],
     },
     {
+      name: 'menu',
+      type: 'menuLink',
+      title: 'Example Nested Menu',
+    },
+    {
       name: 'footerText',
       type: 'simplePortableText',
       fieldset: 'footer',

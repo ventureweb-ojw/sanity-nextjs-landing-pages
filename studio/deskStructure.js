@@ -2,7 +2,7 @@ import S from '@sanity/desk-tool/structure-builder'
 
 // We filter document types defined in structure to prevent
 // them from being listed twice
-const hiddenDocTypes = (listItem) => !['page', 'route', 'site-config'].includes(listItem.getId())
+const hiddenDocTypes = (listItem) => !['page', 'route', 'experience', 'site-config'].includes(listItem.getId())
 
 export default () =>
   S.list()
@@ -11,5 +11,6 @@ export default () =>
       S.documentListItem().id('global-config').schemaType('site-config').title('Site config'),
       S.documentTypeListItem('page').title('Pages'),
       S.documentTypeListItem('route').title('Routes'),
+      S.documentTypeListItem('experience').title('Experiences'),
       ...S.documentTypeListItems().filter(hiddenDocTypes),
     ])

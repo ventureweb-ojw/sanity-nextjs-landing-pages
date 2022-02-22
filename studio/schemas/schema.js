@@ -8,6 +8,7 @@ import schemaTypes from 'all:part:@sanity/base/schema-type';
 import page from './documents/page';
 import route from './documents/route';
 import siteConfig from './documents/siteConfig';
+import experience from './documents/experience';
 
 // Object types
 import cta from './objects/cta';
@@ -17,12 +18,15 @@ import internalLink from './objects/internalLink';
 import link from './objects/link';
 import portableText from './objects/portableText';
 import simplePortableText from './objects/simplePortableText';
+import xyPos from './objects/xyPos';
+import menuLink from './objects/menuLink';
 
 // Landing page sections
 import hero from './objects/hero';
 import imageSection from './objects/imageSection';
 import mailchimp from './objects/mailchimp';
 import textSection from './objects/textSection';
+import heroSlideshow from './objects/heroSlideshow';
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -44,5 +48,9 @@ export default createSchema({
     simplePortableText,
     siteConfig,
     textSection,
+    experience,
+    xyPos,
+    heroSlideshow,
+    menuLink,
   ]),
 });

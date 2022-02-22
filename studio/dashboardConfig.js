@@ -45,7 +45,7 @@ export default {
     },
     {
       name: 'document-list',
-      options: { title: 'Recently edited', order: '_updatedAt desc', limit: 10, types: ['page'] },
+      options: { title: 'Recently edited', order: '_updatedAt desc', limit: 10, types: ['page', 'experience'] },
       layout: { width: 'medium' }
     },
     { name: 'project-users', layout: { height: 'auto' } }

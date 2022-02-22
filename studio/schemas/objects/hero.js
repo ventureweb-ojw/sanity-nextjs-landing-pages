@@ -22,6 +22,11 @@ export default {
       },
     },
     {
+      name: 'backgroundImageFocus',
+      type: 'xyPos',
+      title: 'Background Image Focus',
+    },
+    {
       name: 'ctas',
       type: 'array',
       title: 'Call to actions',
